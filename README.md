@@ -2,6 +2,8 @@
 
 **ProbeDrift** is a Python library for evaluating the out-of-distribution (OOD) generalisation of supervised uncertainty quantification (UQ) probes for large language models. It provides a simple API for loading the training and evaluation datasets required to benchmark how well a UQ probe trained on one dataset or task type transfers to others.
 
+ProbeDrift is introduced in [**Hidden Failures in Robustness: Why Supervised Uncertainty Quantification Needs Better Evaluation**](https://arxiv.org/pdf/2604.11662). Please cite this work if you use this repo.
+
 ---
 
 ## Benchmarks
@@ -223,3 +225,9 @@ The `source_ids` attribute on both training and eval datasets tells your pipelin
 ### Training-only datasets (OOD sources)
 
 `med_quad`, `samsum`, `mmlu`, `truthful_qa` — plus instruct variants of all datasets above.
+
+---
+
+## Acknowledgments
+
+ProbeDrift's prompts are adapted from the leave-one-out OOD evaluation from [**Token-Level Density-Based Uncertainty Quantification Methods for Eliciting Truthfulness of Large Language Models**](https://aclanthology.org/2025.naacl-long.113/).
